@@ -1,218 +1,315 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<!-- Head -->
-	<head>
-		<meta charset="UTF-8">
-		<title>Robert Cunningham</title>
-		  <link rel="stylesheet" type="text/css" href="Stylesheet/portfolio.css">
-		  <script src="/JS/portfolio.js"></script>
-		  <script src="JS/jquery-3.4.1.js"></script> <!-- We use a little bit of jQuery on this site now -->
-	</head>
+<head>
 
-<!-- Body -->
-<body class="Background"> 
-<!-- Fade in effect -->
-<script> 
-  document.body.className += ' fade-out';
-    $(function() {
-      $('body').removeClass('fade-out');
-    }
-  );
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-</script>
+  <title>Robert Cunningham - Software Developer</title>
 
-<!-- Navbar -->
-	<div class="Navbar">
-		<a class="active" href="#Home">Home</a> 
-		<a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
-		<a href="#About">About</a>
-		<a href="#GitHub">GitHub</a>
-		<a onclick="openForm()">Contact</a> <!-- This makes it so that our openForm function runs when we click Contact on the nav bar -->
-	</div>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- This allows us to close the form when we click outside the nav bar or contact form -->
-<div class="btn cancel" onclick="closeForm()">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-<!-- Home -->
-	<div id="Home">
-		<br> <!-- Breaks inserted to add space between navbar and first heading -->
-		<br>
-		
-<!-- Video -->
-		<video autoplay muted loop id="background_vid"> <!-- Makes the video play automatically, on a loop and with no sound -->
-			<source src="Video/background_vid.mp4" type="video/mp4">
-			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
-		</video>
-	</div>
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.css" rel="stylesheet">
 
-<!-- Video text --> 
-	<div class="Video_Text"> 
-		<h1 style="color:white;">Robert Cunningham | Portfolio</h1>
-			<p> 
-			  <strong>
-					<center>
-						<q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-						<br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage
-                        <br>or field of battle and to command such unswervingly dutiful actors or troops.
-						</q>	
-						<br>
-						<br>
-						<br>
-						Welcome to my portfolio!<br>
-						Since you're here, you can call me Robbie<br>
-						<br>Take a look around, and enjoy :)
-					</center>	
-			  </strong>				
-			</p> 
-	</div>
+</head>
 
-<!-- Slideshow section -->
-  <div id="Slideshow">
-    <div id="Slideshow_Background"> 
-      <div id="Slideshow_Container">
-        
-		<div class="mySlides fade">
-          <div class="Slide_Number">1 / 6</div>
-            <img class="Slide_Show_Images" src="Images/self_portrait.jpg" style="width:100%">
-              <div class="text"></div>
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Robert Cunningham</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0d text-uppercase">Robert Cunningham</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Software Developer</h2>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto light-white">
+          <h2 class="mb-4">About Me</h2>
+          <!-- <p class="mb-3">
+            There's no denying the power of technology. Its boundless potential has embedded in me a sense of astonishment.
+            I wanted to better understand it, so I learned how to code.
+          </p> -->
+          <p class="mb-3">
+            With the core essence of software development being about constant learning and improvement, it's a perfect fit with my enthusiasm for personal development.
+          </p>
+          <p class="mb-3">
+            As an avid learner, I’m highly driven to find solutions to software development challenges. I have full stack software development experience working with a team, and my background in mathematics would make me a key asset to yours.
+          </p>
+          <p>
+            I am currently SEEKING EMPLOYMENT! If you need a developer, I would love to figure out how we can be a good fit. Please, <a href="#contact">click here and contact me!</a>
+          </p>
+          <div class="container mb-5">
+            <h3 class="mb-4">Skills</h3>
+            <div class="row">
+              <div class="col">
+                <h5>HTML</h5>
+                <i class="fab fa-html5 fa-2x"></i>
+              </div>
+              <div class="col">
+                <h5>CSS</h5>
+                <i class="fab fa-css3-alt fa-2x"></i>
+              </div>
+              <div class="col">
+                <h5>JavaScript</h5>
+                <i class="fab fa-js-square fa-2x"></i>
+              </div>
+              <div class="col">
+                <h5>Python</h5>
+                <i class="fab fa-python fa-2x"></i>
+              </div>
+              <div class="col">
+                <h5>C#</h5>
+                <i class="fab fa-microsoft fa-2x"></i>
+              </div>
+              <div class="col">
+                <h5>SQL</h5>
+                <i class="fas fa-database fa-2x"></i>
+              </div>
+              <div class="col">
+                <h5>Git</h5>
+                <i class="fab fa-git fa-2x"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        
-		<div class="mySlides fade">
-          <div class="Slide_Number">2 / 6</div>
-            <img class="Slide_Show_Images" src="Images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
-              <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+      </div>
+    </div>
+  </section>
+
+
+      <!-- Featured Project Row -->
+
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+      <div>
+        <div class="featured-text text-center text-lg-left text-dark">
+          <h4>Prosper I.T. Internship</h4>
+
+          <br><br>
+
+          <div class="container">
+            <div class="row row-cols-2 ">
+              <div class="col">
+                <p>Working with a small team of fellow software developers on a 6-month contract for building a Web Application for a local theatre company in downtown Portland.</p>
+              </div>
+              <div class="col">
+                <p>We're implementing a Visual C# / ASP.NET, Code-First (Entity Framework) Web Application, and each tackling a healthy balance of Back and Front end stories. The project is in its 4th Sprint Cycle as of January (2020).</p>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          
+        </div>
+      </div>
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div>
+          <img class="img-fluid mb-3 mb-lg-0" src="img/cut.png" alt="project screenshot">
         </div>
 
-        <div class="mySlides fade">
-          <div class="Slide_Number">3 / 6</div>
-            <img class="Slide_Show_Images" src="Images/Python.png" style="width:100%">
-              <div class="text">Python (including Pandas, numpy et all)</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="Slide_Number">4 / 6</div>
-            <img class="Slide_Show_Images" src="Images/C_Sharp_and_Dot_NET.png" style="width:100%">
-              <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
-        </div>
-
-		<div class="mySlides fade">
-	      <div class="Slide_Number">5 / 6</div>
-			<img class="Slide_Show_Images" src="Images/SQL_and_Database.jpg" style="width:100%">
-              <div class="text">back end development, databases and SQL.</div>
-			</div>
-
-		<div class="mySlides fade">
-		  <div class="Slide_Number">6 / 6</div>
-			<img class="Slide_Show_Images" src="Images/my_pc.jpg" style="width:100%">
-			  <div class="text"> 
-				<a onclick="openForm()" href="#Contact" style="color:white;">Get in touch!</a>
-			  </div>
-	    </div>
-	
-		  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-		  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-		
-	  </div>
-  <br>
-
-      <div style="text-align:center">
- 
-		<span class="dot" onclick="currentSlide(1)"></span> 
-		<span class="dot" onclick="currentSlide(2)"></span> 
-		<span class="dot" onclick="currentSlide(3)"></span> 
-		<span class="dot" onclick="currentSlide(4)"></span> 
-		<span class="dot" onclick="currentSlide(5)"></span> 
-		<span class="dot" onclick="currentSlide(6)"></span> 
 
       </div>
     </div>
-  </div>
+  </section>
 
-<!-- We included our JS function within this file to ensure it was given precedence, this function covers the slideshow -->
-  <script>
-    var slideIndex = 1;
-	  showSlides(slideIndex);
-	function plusSlides(n) {
-	  showSlides(slideIndex += n);
-	}
-	function currentSlide(n) {
-	  showSlides(slideIndex = n);
-	}
-	function showSlides(n) {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("dot");
-		if (n > slides.length) {slideIndex = 1}    
-		if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-		  slides[i].style.display = "none";  
-		  }
-		  for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		  }
-	  slides[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " active";
-	}
-  </script>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+      <h2 class="mb-5 text-center text-dark">Projects</h2>
 
-<!-- About section -->
-  <div class="Row" id="About"> 
-	<div class="Column_2"> <!-- Left column -->
-	  <img src="Images/my_pc.jpg" alt="Laptop">
-	</div>
-  
-	<div class="Column_1"> <!-- Right column -->
-	  <h1>About</h2>
-		<p>
-			I'm a full-stack web and software developer with an MS in Applied Math on my way to becoming a Data Scientist<br><br>
-			My most recent accredidation is from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, where I trained immersively in HTML, CSS, JS, SQL, C#, Python and more over the last 6 months. <br><br>
-			I could be available for hire on your next project. <a href="#Contact">Contact</a> me below!
-		</p>
-	</div>
-  </div>
 
-<!-- GitHub section -->
-	<div class="Row" id="GitHub">
-		<div class="Column_1"> <!-- Left column -->
-			<h1>GitHub</h1>
-				<p>You can view my coding projects on my GitHub profile here:<br>
-				<center><a href="https://github.com/bagpyp" target="_blank">https://github.com/bagpyp</a></center></p>
-		</div>
-		
-		<div class="Column_2"> <!-- Right column -->
-			<a href="https://github.com/bagpyp" target="_blank"><img src="Images/consencous_shot.png" alt="GitHub"></a>
-		</div>
-	</div>
-</div>
 
-<!-- Contact section -->
-  <div id="Contact"> 
-    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
-	  <div class="form-popup" id="myForm">
-	    <form action="https://formspree.io/xleelzkd" method="POST" class="form-container"> 
-		<h1>Contact</h1>
-			<label for="name"><b>Name</b></label>
-			  <input type="text" placeholder="Type your name here" name="name" required>
-			<label for="phone"><b>Phone</b></label>
-			  <input type="text" placeholder="Enter your phone number here" name="phone">
-			<label for="email"><b>Email</b></label>		
-			  <input type="text" placeholder="Type your email address here" name="email" required>
-			<label for="message"><b>Message</b></label>
-			  <input type="text" placeholder="Type your message here" name="message">
- 
-    <button type="submit" class="btn">SUBMIT</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-	    </form>
-	  </div>
-  </div>
-	
-<!-- Footer section -->	
-	<footer>
-	  <p>
-	    <center>&copy MagPy Inc.,  <a href="https://bagpyp.github.io">Bagpyp</a></center><br>
-      </p>
-	</footer>
+
+
+
+
+
+
+      <!-- Project Contoso -->
+      <div class="row justify-content-center no-gutters mb-5">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/cSharp.png" alt="project screenshot">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left light-white">
+                <h4>Contoso University</h4>
+                <p>- This project was created following Microsoft's tutorial to gain more experience using Entity Framwork 6 Code-First and MVC.</p>
+                <p>- Tech used: HTML, CSS, C#</p>
+                <a href="https://github.com/bagpyp/CS_webApps_MVC/tree/master/ContosoUniversity/ContosoUniversity" target="_blank">Click here to see it on GitHub</a>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Car insuracnce -->
+      <div class="row justify-content-center no-gutters mb-5">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/cSharp2.png" alt="project screenshot">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right light-white">
+                <h4>Car Insurance Quote</h4>
+                <p>- This C# and MVC project genereates a car insurance quote based on the user's input.</p>
+                <p>- Tech used: HTML, CSS, C#</p>
+                <a href="https://github.com/bagpyp/CS_webApps_MVC/tree/master/CarInsuranceQuote/CarInsuranceQuote" target="_blank">Click here to see it on GitHub</a>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Pizza -->
+      <div class="row justify-content-center no-gutters mb-5">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/js.png" alt="project screenshot">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left light-white">
+                <h4>Pizza Ordering Menu</h4>
+                <p>- This is a JavaScript project that calculates the final pizza price based on selections.</p>
+                <p>- Tech used: HTML, CSS, JavaScript</p>
+                <a href="https://github.com/bagpyp/JS_advanced/tree/master/pizza" target="_blank">Click here to see it on GitHub</a>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Library SQL stuff -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/sql.png" alt="project screenshot">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right light-white">
+                <h4>Library Management System</h4>
+                <p>- This is an SQL project creating a Library Management System database and schema using SQL Server.</p>
+                <p>- Tech used: SQL</p>
+                <a href="https://github.com/bagpyp/SQL_advanced" target="_blank">Click here to see it on GitHub</a>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section bg-black">
+    <div class="container">
+      <h2 class="light-white text-center mb-5">Contact Me</h2>
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fab fa-linkedin fa-2x text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">LinkedIn</h4>
+              <hr class="my-4">
+              <a href="https://www.linkedin.com/in/robert3825/" target="_blank">linkedin.com/in/robert3825</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <a href="mailto:rtc@bagpyp.net">rtc@bagpyp.net</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fab fa-github fa-2x text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">GitHub</h4>
+              <hr class="my-4">
+              <a href="https://github.com/bagpyp" target="_blank">bagpyp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container light-white">
+      Robert Cunningham - Software Developer
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
 
 </body>
+
 </html>
